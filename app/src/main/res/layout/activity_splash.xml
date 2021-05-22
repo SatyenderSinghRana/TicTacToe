@@ -8,16 +8,16 @@
     tools:context=".SplashActivity">
 
     <TextView
-        style="@style/splashText"
         android:id="@+id/tvTic"
+        style="@style/splashText"
         android:text="Tic"
         app:layout_constraintBottom_toTopOf="@+id/tvTac"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        style="@style/splashText"
         android:id="@+id/tvTac"
+        style="@style/splashText"
         android:text="Tac"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,8 +25,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        style="@style/splashText"
         android:id="@+id/tvToe"
+        style="@style/splashText"
         android:text="Toe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

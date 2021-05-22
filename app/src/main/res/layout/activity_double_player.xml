@@ -1,109 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gameBackground"
     tools:context=".DoublePlayerActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="Tic Tac Toe"
-        android:textColor="@color/purple_200"
-        android:textSize="60sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:id="@+id/includedLayout"
+        layout="@layout/gamearea" />
 
-    <LinearLayout
-        android:id="@+id/mainlayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:alpha="0"
-        android:orientation="vertical"
-        android:layout_marginBottom="40dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-        <!-- Row 1 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tva1"
-                android:tag="a1"
-                style="@style/gameBlocks"
-                android:text="X" />
-
-            <TextView
-                android:id="@+id/tva2"
-                android:tag="a2"
-                style="@style/gameBlocks"
-                android:text="X" />
-
-            <TextView
-                android:id="@+id/tva3"
-                android:tag="a3"
-                style="@style/gameBlocks"
-                android:text="X" />
-        </LinearLayout>
-
-        <!-- Row 2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tvb1"
-                android:tag="b1"
-                style="@style/gameBlocks"
-                android:text="X" />
-
-            <TextView
-                android:id="@+id/tvb2"
-                android:tag="b2"
-                style="@style/gameBlocks"
-                android:text="X" />
-
-            <TextView
-                android:id="@+id/tvb3"
-                android:tag="b3"
-                style="@style/gameBlocks"
-                android:text="X" />
-        </LinearLayout>
-
-        <!-- Row 3 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tvc1"
-                android:tag="c1"
-                style="@style/gameBlocks"
-                android:text="X" />
-
-            <TextView
-                android:id="@+id/tvc2"
-                android:tag="c2"
-                style="@style/gameBlocks"
-                android:text="X" />
-
-            <TextView
-                android:id="@+id/tvc3"
-                android:tag="c3"
-                style="@style/gameBlocks"
-                android:text="X" />
-        </LinearLayout>
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

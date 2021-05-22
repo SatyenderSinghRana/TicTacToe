@@ -14,34 +14,56 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="basicdata">
+        <item name="android:shadowColor">#9E000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
     <style name="splashText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:elevation">2dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">80sp</item>
         <item name="android:alpha">0</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/holo_purple</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
     </style>
 
-    <style name="menuText">
+    <style name="menuText" parent="basicdata">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:elevation">2dp</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">48sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
     </style>
 
-    <style name="gameBlocks">
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">1</item>
+    <style name="gameBlocks" parent="basicdata">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">100sp</item>
+        <item name="android:padding">4dp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/holo_blue_dark</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:onClick">checkTurn</item>
+        <item name="alpha">0</item>
+        <item name="android:scaleX">0</item>
+        <item name="android:scaleY">0</item>
+    </style>
+
+    <style name="darkBlocks">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="lightBlocks">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
     </style>
 </resources>
